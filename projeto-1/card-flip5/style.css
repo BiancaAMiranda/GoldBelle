@@ -1,0 +1,109 @@
+/*body {
+    background-image: url("WhatsApp\ Image\ 2021-07-12\ at\ 20.47.08.jpeg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}*/
+html {
+    background-color: rgb(255, 219, 224);
+}
+
+/*.card {
+     padding: 5rem 2.5rem;
+    border-radius: 3rem;
+    border: 1px solid transparent;
+    border-top-color: rgba(255, 225, 225, 0.5);
+    border-left-color: rgba(255, 225, 225, 0.5);
+    border-bottom-color: rgba(255, 225, 225, 0.1);
+    border-right-color: rgba(255, 225, 225, 0.1);
+    /* backdrop-filter: blur(.5rem); */
+/* box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5); 
+}*/
+
+.card img {
+    height: 320px;
+    width: 240px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    border: 2px solid #be7b22;
+}
+
+.card a {
+    border: none;
+    color: lightpink;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card a:hover {
+    color: rgb(255, 162, 176);
+    text-decoration: none;
+}
+
+.card-flip>div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: 240px;
+    height: 320px;
+    margin: 0;
+
+    display: flex;
+    padding: 0;
+
+
+    /*border-top-color: rgba(255, 225, 225, 0.5);
+    border-left-color: rgba(255, 225, 225, 0.5);
+    border-bottom-color: rgba(255, 225, 225, 0.1);
+    border-right-color: rgba(255, 225, 225, 0.1);*/
+    backdrop-filter: blur(.5rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+}
+
+.card-flip:hover .card-front {
+    transform: rotateY(-180deg);
+}
+
+.card-flip:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+#jd1 {
+    background-color: rgba(231, 231, 231, 0.13);
+}
+
+#querid {
+    height: 250px;
+}
+
+.hr-middle {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.35);
+    margin: 8px 0px;
+}
+
+.hr-middle::before,
+.hr-middle::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    font-size: 30px;
+    line-height: 0px;
+    margin: 0px 10px;
+}
